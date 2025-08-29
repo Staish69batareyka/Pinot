@@ -1,6 +1,8 @@
 "use client";
 import {useState} from "react";
 import styles from './page.module.css'
+import Media from "@/app/Media";
+
 
 export default function Page() {
 
@@ -16,6 +18,7 @@ export default function Page() {
                      onMouseEnter={() => {setHover('left')}}>
 
                     <div className={styles.content}>
+                        <Media src="/post_002.gif" alt="left-content" className={styles.media} />
                         <h1>Туристический комплекс</h1>
                     </div>
 
@@ -26,6 +29,7 @@ export default function Page() {
                 onMouseEnter={() => setHover('right')}
                 onMouseLeave={() => setHover(null)}>
                     <div className={styles.content}>
+                        <Media src="/post_001.jpg" alt="right-content" className={styles.media} />
                         <h1>Гравитационная винодельня</h1>
                     </div>
                 </div>
